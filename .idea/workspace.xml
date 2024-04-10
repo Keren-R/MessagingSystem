@@ -4,38 +4,124 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff68d5dc-84ac-4fa0-81ca-2ae769669b0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MessagingSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ff68d5dc-84ac-4fa0-81ca-2ae769669b0b" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messaging_system/templates/message_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messaging_system/templates/messages_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging_system/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_system/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_system/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2eob4RAfIYiin8wADXQvUDTyrz4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;promo.database&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/messaging_system/templates" />
+      <recent name="$PROJECT_DIR$/messaging_system" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/messaging" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.views">
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MessagingSystem" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/messaging_system/messaging_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/messaging_system/messaging_system/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MessagingSystem" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/messaging_system/messaging_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/messaging_system/messaging_app/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.settings" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,6 +138,19 @@
       <option name="presentableId" value="Default" />
       <updated>1712573686340</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1712584904081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712584904081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
