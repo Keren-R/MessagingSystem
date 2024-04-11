@@ -4,19 +4,20 @@ from .models import Message
 
 
 class UserSerializer(serializers.ModelSerializer):
+    """
+    Serializer for a User object.
+    """
     class Meta:
         model = User
         fields = '__all__'
 
 
 class MessageSerializer(serializers.ModelSerializer):
-    # sender_details = serializers.CharField(source='sender.name')
-    # receiver_details = serializers.RelatedField(source='name', read_only=True)
-
+    """
+    Serializer for a Message object.
+    """
     sender = serializers.SlugRelatedField(read_only=True, slug_field="username")
     receiver = serializers.SlugRelatedField(read_only=True, slug_field="username")
-    # sender = UserSerializer()
-    # receiver = UserSerializer()
 
     class Meta:
         model = Message
