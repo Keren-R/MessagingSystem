@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff68d5dc-84ac-4fa0-81ca-2ae769669b0b" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messaging_system/messaging_app/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messaging_system/templates/message_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messaging_system/templates/messages_list.html" afterDir="false" />
+    <list default="true" id="ff68d5dc-84ac-4fa0-81ca-2ae769669b0b" name="Changes" comment="implemented write msg, get all msgs per user, get unread msgs, delete msg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging_system/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_system/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messaging_system/messaging_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_system/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging_system/messaging_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/messaging_system/messaging_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Keren-R"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Keren-R/MessagingSystem.git",
+    "accountId": "7c428549-1bd2-47be-8eee-9ea7ef448f7e"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -125,7 +122,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
@@ -146,11 +143,20 @@
       <option name="project" value="LOCAL" />
       <updated>1712584904081</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented write msg, get all msgs per user, get unread msgs, delete msg">
+      <option name="closed" value="true" />
+      <created>1712767194866</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712767194866</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="implemented write msg, get all msgs per user, get unread msgs, delete msg" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented write msg, get all msgs per user, get unread msgs, delete msg" />
   </component>
 </project>
