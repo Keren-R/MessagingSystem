@@ -5,6 +5,7 @@ from rest_framework.views import APIView
 
 from .models import Message
 from .serializers import MessageSerializer
+from .utils import generate_error_object
 
 
 class MessagesList(APIView):
@@ -31,16 +32,16 @@ class MessagesList(APIView):
                 user_name = request.data.get('receiver')
                 receiver = User.objects.get(username=user_name)
                 serializer.save(sender=request.user, receiver=receiver)
-                data = serializer.data
+                response_data = serializer.data
                 response_status = status.HTTP_201_CREATED
             else:
-                data = serializer.errors
+                response_data = serializer.errors
                 response_status = status.HTTP_400_BAD_REQUEST
         except User.DoesNotExist:
-            response_status = status.HTTP_404_NOT_FOUND
-            data = {"error": f"user named {user_name} does not exist."}
+            error_msg = f"user named {user_name} does not exist."
+            response_data, response_status = generate_error_object(error_type="not_found", error_msg=error_msg)
 
-        return Response(data, status=response_status)
+        return Response(response_data, status=response_status)
 
 
 class MessageDetailView(APIView):
@@ -51,7 +52,6 @@ class MessageDetailView(APIView):
         """
         Return the message object with the provided pk.
         """
-        response_data = None
         try:
             message = Message.objects.get(pk=pk)
             if request.user == message.sender or request.user == message.receiver:
@@ -59,11 +59,11 @@ class MessageDetailView(APIView):
                 response_data = serializer.data
                 response_status = status.HTTP_200_OK
             else:
-                response_status = status.HTTP_403_FORBIDDEN
-                response_data = {"error": "you are not authorised to retrieve this message"}
+                error_msg = "you are not authorised to retrieve this message"
+                response_data, response_status = generate_error_object(error_type="not_authorised", error_msg=error_msg)
         except Message.DoesNotExist:
-            response_status = status.HTTP_404_NOT_FOUND
-            response_data = {"error": f"message with id {pk} does not exist."}
+            error_msg = f"message with id {pk} does not exist."
+            response_data, response_status = generate_error_object(error_type="not_found", error_msg=error_msg)
 
         return Response(data=response_data, status=response_status)
 
@@ -78,23 +78,27 @@ class MessageDetailView(APIView):
                 response_data = serializer.data
                 response_status = status.HTTP_200_OK
             else:
-                response_data = {"error": "you are not authorised to read this message"}
-                response_status = status.HTTP_403_FORBIDDEN
+                error_msg = "you are not authorised to read this message"
+                response_data, response_status = generate_error_object(error_type="not_authorised", error_msg=error_msg)
+
         except Message.DoesNotExist:
-            response_data = {}
-            response_status = status.HTTP_404_NOT_FOUND
+            error_msg = f"message with id {pk} does not exist."
+            response_data, response_status = generate_error_object(error_type="not_found", error_msg=error_msg)
 
         return Response(data=response_data, status=response_status)
 
     def delete(self, request, pk):
         message = Message.objects.get(pk=pk)
+        response_data = None
 
         if request.user == message.sender or request.user == message.receiver:
             message.delete()
-            return Response(status=status.HTTP_204_NO_CONTENT)
+            response_status = status.HTTP_204_NO_CONTENT
         else:
-            return Response({"error": "You are not authorized to delete this message."},
-                            status=status.HTTP_403_FORBIDDEN)
+            error_msg = "you are not authorised to delete this message"
+            response_data, response_status = generate_error_object(error_type="not_authorised", error_msg=error_msg)
+
+        return Response(data=response_data, status=response_status)
 
 
 class UnreadMessagesList(APIView):
